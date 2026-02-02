@@ -1,3 +1,19 @@
+/**
+ * suspect.c — Test File for ColdCase
+ *
+ * This file is NOT part of the main ColdCase tool.
+ * It exists only for testing and demonstration purposes.
+ * ColdCase uses this file to detect:
+ *  - TODO comments
+ *  - FIXME notes
+ *  - Exposed passwords
+ *  - Risky functions like eval
+ *  - Deprecated or unused code
+ *
+ * Do NOT include this file in the main build.
+ * Designed for testing by Riyouf.
+ */
+
 // suspect.c 
 
 #include <stdio.h>
@@ -38,4 +54,5 @@ int main() {
     // TODO: add error handling
     // password = get_env("ADMIN_PASS"); // password exposure again
     return 0;
+
 }

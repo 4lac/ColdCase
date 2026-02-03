@@ -1,5 +1,7 @@
 # 🧊 ColdCase — Digital Forensic Code Scanner
-
+<p align="center">
+  <img src="coldcaselogo.png" alt="ColdCase Logo" width="250"/>
+</p>
 ColdCase is a digital forensics–themed source‑code scanner written in C.  
 It analyzes files line‑by‑line like a detective investigating a cold case, searching for suspicious traces such as:
 

@@ -31,6 +31,7 @@ int main() {
     }
     // Begin forensic sweep—scan for anomalies line by line
     scan_file_for_issues(&case_file);
+    get_file_status(case_file.status, case_file.file_age, case_file.issue_count);
 
     // Present the final report—findings, verdict, and closure
     print_report(&case_file);

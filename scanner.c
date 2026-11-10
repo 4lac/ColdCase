@@ -40,7 +40,7 @@ if (opfile == NULL) {
             Issue_t *issue = &case_file->issues[case_file->issue_count];
             issue->line_number = current_line_number;
             issue->type = type;
-            strcpy(issue->content, line);
+            snprintf(issue->content, sizeof(issue->content), "%s", line);
             case_file->issue_count++;
         }
         // Move to the next line—the investigation continues

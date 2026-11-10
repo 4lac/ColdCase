@@ -18,7 +18,6 @@ time_t now = time(NULL);
 case_file->file_age=(now - info.st_mtime)/(60*60*24);
 
 // Interpret the metadata and assign a poetic status verdict
-get_file_status(case_file->status, case_file->file_age, case_file->issue_count);
 case_file->read_success = 1;
 }
 else

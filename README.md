@@ -2,6 +2,7 @@
 <p align="center">
   <img src="coldcaselogo.png" alt="ColdCase Logo" width="250"/>
 </p>
+<p align="center"><b>Part of <a href="https://github.com/4lac">❄️ R/ICE Tools</a></b> — a collection of security tools by Reyof</p>
 
 ColdCase is a digital forensics–themed source‑code scanner written in C.  
 It analyzes files line‑by‑line like a detective investigating a cold case, searching for suspicious traces such as:
@@ -13,7 +14,7 @@ It analyzes files line‑by‑line like a detective investigating a cold case, s
 
 It also collects the file's metadata — size, last modification time, and file age.
 
-ColdCase generates a narrative forensic report with color‑coded issue types and a status verdict based on how long the file has been untouched.  
+ColdCase generates a narrative forensic report with color‑coded issue types a status verdict based on how long the file has been untouched, and a risk level based on the number of findings.  
 Designed and narrated by **Reyof**.
 
 ---
@@ -98,6 +99,7 @@ ColdCase will generate a full forensic-style report including:
 - File size and last modification time  
 - Number of issues found  
 - File status — from **Hot** (recently modified) to **Frozen** (untouched for months)  
+- Risk level — from **Stable** to **Possibly risky**, based on the number of findings  
 - Each issue with its line number, type, and content, color-coded by type  
 
 ---

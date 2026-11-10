@@ -20,7 +20,7 @@ else if (issue_count <= 5)
 else
     risk = "\033[1;31mPossibly risky.\033[0m";
     // ColdCase compiles the final forensic verdict into a single poetic status line
-    sprintf(status, "\033[1;36m%s\033[0m", heat, age, issue_count, risk);
+    snprintf(status, 256, "%s- modified %d days ago. %d issue(s). %s", heat, age, issue_count, risk);
     //sprintf(status, "\033[1;36m%s - modified %d days ago. %d issue(s). %s\033[0m", heat, age, issue_count, risk);
 };
 

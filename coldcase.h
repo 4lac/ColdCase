@@ -64,7 +64,7 @@ int file_size;
 int file_age;
 time_t last_modified;
 int issue_count;
-char status[100];
+char status[256];
 Issue_t issues[MAX_ISSUES]; 
 int read_success;
 
